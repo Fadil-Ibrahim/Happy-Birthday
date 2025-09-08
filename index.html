@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Khusus Untuk Rara</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d8f3dc 0%, #64b5f6 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Judul atas */
+  .title-banner {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Grid container */
+  #frames-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .frame {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 14px;
+    overflow: hidden;
+    opacity: 0.35;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+  }
+
+  .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Tombol */
+  .gradient-btn {
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    pointer-events: auto;
+  }
+  .gradient-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  }
+
+  /* Popup */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 75vh;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    text-align: left;
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    color: #2a2a2a;
+    z-index: 100;
+    overflow-y: auto;
+  }
+  .popup.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .popup h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #185a9d;
+  }
+  .popup p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- Judul -->
+<h1 class="title-banner">Khusus Untuk Rara 💙</h1>
+
+<!-- Susunan Grid -->
+<div id="frames-container">
+  <!-- Baris atas -->
+  <div class="frame"><img src="1.jpg" alt=""></div>
+  <div></div>
+  <div class="frame"><img src="2.jpg" alt=""></div>
+
+  <!-- Baris tengah -->
+  <div class="frame"><img src="3.jpg" alt=""></div>
+  <button class="gradient-btn" id="clickHereBtn">Buka Pesan</button>
+  <div class="frame"><img src="4.jpg" alt=""></div>
+
+  <!-- Baris bawah -->
+  <div class="frame"><img src="5.jpg" alt=""></div>
+  <div class="frame"><img src="6.jpg" alt=""></div>
+  <div class="frame"><img src="7.jpg" alt=""></div>
+</div>
+
+<!-- Popup -->
+<div id="greetingPopup" class="popup">
+  <h2>Pesan bukan sekedar pesan</h2>
+  <p>
+    happy birthdayy yaa my girlfriend🥳🎉<br>
+    uh i mean <br>
+    "girl"  = perempuan <br>
+    "friend" = teman <br>
+    so girlfriend mean is "teman perempuan" right?🤔 <br>
+    brarti nga termasuk my girlfriend toh?🤣 canda raaa😊<br>
+
+    ohiya, kt mau ngucapin happy birthday buat tpe teman cwe terdebest,  selamatt sudah dikepala dua yaa kakss raraa🥳 semoga tahun ini bukan sekedar pengulangan yg tahun lalu, tapi semoga di tahun ini lebih banyak hal-hal baik yg datang for raraa, tetap dikelilingi teman² yg baik dan lingkungan yg baik, smoga juga nd bnyak pusing dngan tu urusan organisasi, pokoknya doa yg trbaik for raraa😇 ohya satu lgi, jngan terlalu sering galau dng nangisin hal yg nd perlu okayy? msih bnyak diluar sana yang lebih pantas buat di nangisin😌
+
+    nah skrg tso nntau m blg apa jdi, berdoa sndiri jo neh, nnti kt bntu aminkan😇<br>
+    ohiyo amper lupa, semoga bisa berjodoh dengan kairi, aamiinn😇  
+    untuk hadiah fisiknya besok aja yaaa, itupun klo ng ada waktu sih😌
+    <br><br>
+    GBU yaaa 🕊  <br><br>
+    Jadi fotobox nya kapan nih kaks, biar bisa distory gitu 👀
+  </p>
+  <button class="gradient-btn" id="greetCloseBtn" style="margin-top: 1rem;">Close</button>
+</div>
+
+<!-- Audio -->
+<audio id="bgMusic" src="lagu.mp3" preload="auto"></audio>
+
+<script>
+  const clickHereBtn = document.getElementById('clickHereBtn');
+  const greetingPopup = document.getElementById('greetingPopup');
+  const greetCloseBtn = document.getElementById('greetCloseBtn');
+  const bgMusic = document.getElementById('bgMusic');
+
+  function fadeInMusic(audio) {
+    audio.volume = 0;
+    audio.play();
+    let vol = 0;
+    const fade = setInterval(() => {
+      if (vol < 1) {
+        vol += 0.05;
+        audio.volume = Math.min(vol, 1);
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+  }
+
+  clickHereBtn.addEventListener('click', () => {
+    fadeInMusic(bgMusic);
+    greetingPopup.classList.add('show');
+    greetingPopup.focus();
+  });
+
+  greetCloseBtn.addEventListener('click', () => {
+    greetingPopup.classList.remove('show');
+    clickHereBtn.focus();
+  });
+</script>
+
+</body>
+</html>
